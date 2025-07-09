@@ -49,12 +49,27 @@
 
 ---
 
+## 🧱 Estrutura do Projeto
+
+O repositório é organizado em três subprojetos principais, cada um com uma função específica dentro da arquitetura do **SignatorDoc**:
+
+### 📁 `GhostScriptUtils`  
+Módulo responsável pela manipulação de documentos PDF em ambientes onde o **Adobe Acrobat** não está instalado. Utiliza o mecanismo do **Ghostscript** para operações como renderização, conversão e tratamento de arquivos PDF de forma autônoma.
+
+### 📁 `NativeDeviceControlLib`  
+Biblioteca dedicada ao controle de dispositivos de captura de assinatura, como mesas digitalizadoras (ex: **Wacom**). Realiza a interface de comunicação com o hardware, capturando dados biométricos como pressão, velocidade e tempo dos traços.
+
+### 📁 `SignatorDocSolution`  
+Projeto principal da aplicação. Contém toda a interface gráfica, controle das telas, lógica de negócios e integração com as ferramentas de assinatura digital, assinatura manuscrita e validação dos documentos.
+
+---
+
 ## 📦 Instalação
 
 Clone este repositório, abra no Visual Studio, compile e execute.
 
 ```bash
-git clone https://github.com/seu-usuario/SignatorDoc.git
+git clone https://github.com/erk360dev/SignatorDoc.git
 ```
 
 ---
@@ -74,7 +89,7 @@ git clone https://github.com/seu-usuario/SignatorDoc.git
 1. Faça o clone do repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/SignatorDoc.git
+   git clone https://github.com/erk360dev/SignatorDoc.git
    ```
 
 2. Abra o arquivo `SignatorDoc.sln` no Visual Studio  
@@ -104,7 +119,7 @@ Consulte o arquivo `LICENSE` para mais informações.
 
 ## 🌐 Website Oficial
 
-**[http://www.SignatorDoc.sign.doc](http://www.signatordoc.sign.doc/signator)**  
+**[http://em-manutencao.temp](http://em-manutencao.temp/signatordoc)**  
 > *Sistema SignatorDoc.*
 
 ---
@@ -113,7 +128,4 @@ Consulte o arquivo `LICENSE` para mais informações.
 
 Contribuições são bem-vindas.  
 Abra um **issue** ou envie um **pull request** com sugestões, correções ou melhorias.
-
----
-
-
+Tenho planos de modernizar para javascript com algum framework front e c# ou c++ em back, em caso de interesse entrar em contato pelo email erk360dev@hotmail.com
