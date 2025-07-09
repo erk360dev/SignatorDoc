@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FBC3153-CE18-4893-A156-FC7976509D4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SignatorDocSolution</RootNamespace>
+    <AssemblyName>SignatorDocSolution</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon_Logo_Sadd.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words">
+      <HintPath>bin\Libs\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="AxAcroPDFLib">
+      <HintPath>..\Libs\AxAcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Libs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Libs\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="NPlot">
+      <HintPath>bin\Libs\NPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFNet, Version=6.1.1.21853, Culture=neutral, PublicKeyToken=36167be3f67ac39c, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\PDFNet.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFNetLoader">
+      <HintPath>..\Libs\PDFNetLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiometricData.cs" />
+    <Compile Include="DocSigner.cs" />
+    <Compile Include="DocumentsHandle.cs" />
+    <Compile Include="Form_Configurations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Configurations.Designer.cs">
+      <DependentUpon>Form_Configurations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Properties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Properties.Designer.cs">
+      <DependentUpon>Form_Properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RemoveFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RemoveFields.Designer.cs">
+      <DependentUpon>Form_RemoveFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ReplicateSigField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ReplicateSigField.Designer.cs">
+      <DependentUpon>Form_ReplicateSigField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Form_DefineSigFieldsMassiveDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Form_DefineSigFieldsMassiveDocs.Designer.cs">
+      <DependentUpon>Form_Form_DefineSigFieldsMassiveDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SetPreSigFieldConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SetPreSigFieldConfig.Designer.cs">
+      <DependentUpon>Form_SetPreSigFieldConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SetSigStringPattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SetSigStringPattern.Designer.cs">
+      <DependentUpon>Form_SetSigStringPattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SigFieldMassiveDocReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SigFieldMassiveDocReview.Designer.cs">
+      <DependentUpon>Form_SigFieldMassiveDocReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SignatureChartCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SignatureChartCompare.Designer.cs">
+      <DependentUpon>Form_SignatureChartCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SignConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SignConfig.Designer.cs">
+      <DependentUpon>Form_SignConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AboutBox.Designer.cs">
+      <DependentUpon>Form_AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSigFieldLocationStart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelThumbnail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControl\GripBounds.cs" />
+    <Compile Include="PopupControl\NativeMethods.cs" />
+    <Compile Include="PopupControl\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControl\Popup.designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupControl\PopupAnimations.cs" />
+    <Compile Include="SignatureDeviceDraw.cs" />
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignatureDeviceDrawSTU.cs" />
+    <Compile Include="SignatureField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\AweSomeUtils.cs" />
+    <Compile Include="Utils\ComputerIdentifier.cs" />
+    <Compile Include="Utils\E_Email.cs" />
+    <Compile Include="Utils\FormLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FormLicense.Designer.cs">
+      <DependentUpon>FormLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Form_PasswordRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\Form_PasswordRequest.Designer.cs">
+      <DependentUpon>Form_PasswordRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\LicenseSADD.cs" />
+    <Compile Include="Utils\NativeAweSome.cs" />
+    <Compile Include="Utils\RegisterWinEventLogViewer.cs" />
+    <Compile Include="Utils\LoadingPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SignatureDataChart.cs" />
+    <Compile Include="Utils\RegistryAccessFlex.cs" />
+    <EmbeddedResource Include="Form_Configurations.resx">
+      <DependentUpon>Form_Configurations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Properties.resx">
+      <DependentUpon>Form_Properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RemoveFields.resx">
+      <DependentUpon>Form_RemoveFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ReplicateSigField.resx">
+      <DependentUpon>Form_ReplicateSigField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Form_DefineSigFieldsMassiveDocs.resx">
+      <DependentUpon>Form_Form_DefineSigFieldsMassiveDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SetPreSigFieldConfig.resx">
+      <DependentUpon>Form_SetPreSigFieldConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SetSigStringPattern.resx">
+      <DependentUpon>Form_SetSigStringPattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SigFieldMassiveDocReview.resx">
+      <DependentUpon>Form_SigFieldMassiveDocReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SignatureChartCompare.resx">
+      <DependentUpon>Form_SignatureChartCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SignConfig.resx">
+      <DependentUpon>Form_SignConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AboutBox.resx">
+      <DependentUpon>Form_AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Utils\FormLicense.resx">
+      <DependentUpon>FormLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Form_PasswordRequest.resx">
+      <DependentUpon>Form_PasswordRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\EmptyPDF.pdf" />
+    <None Include="Resources\GuidePage.pdf" />
+    <None Include="TempDoc\Testedata %281%29.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GhostScriptUtils\GhostScriptUtils.csproj">
+      <Project>{b94e3566-d08e-4c86-985e-f7097e2babc0}</Project>
+      <Name>GhostScriptUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NativeDeviceControlLib\NativeDeviceControlLib.csproj">
+      <Project>{afaab4ea-a8d1-41bb-935a-46e98646d197}</Project>
+      <Name>NativeDeviceControlLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closebtnsigfield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignatureField.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SigFieldRepeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SigFieldConfig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignDoc_Seal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmptySignSTU500Series.png" />
+    <None Include="Resources\EmptySignatureFieldSTU500Series.png" />
+    <None Include="Resources\EmptyField.png" />
+    <Content Include="Resources\SigFieldReview.png" />
+    <None Include="Resources\okSigFieldConfPatt.png" />
+    <None Include="Resources\RemoveSigFields.png" />
+    <None Include="Resources\ReplicationSigField.png" />
+    <None Include="Resources\LoadingImage.gif" />
+    <None Include="Resources\EmptySignatureField.png" />
+    <None Include="Resources\EmptySignatureFieldSignedBG.png" />
+    <Content Include="Icon_Logo_Sadd.ico" />
+    <None Include="Resources\DoubleSigField.png" />
+    <Content Include="Resources\LargeLogoSADD.png" />
+    <None Include="Resources\StampApproved.png" />
+    <None Include="Resources\StampSignedDigitaly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

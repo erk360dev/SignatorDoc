@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35026.282
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignatorDocSolution", "SignatorDocSolution\SignatorDocSolution.csproj", "{7FBC3153-CE18-4893-A156-FC7976509D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeDeviceControlLib", "NativeDeviceControlLib\NativeDeviceControlLib.csproj", "{AFAAB4EA-A8D1-41BB-935A-46E98646D197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhostScriptUtils", "GhostScriptUtils\GhostScriptUtils.csproj", "{B94E3566-D08E-4C86-985E-F7097E2BABC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Debug|x86.ActiveCfg = Debug|x86
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Debug|x86.Build.0 = Debug|x86
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Release|x86.ActiveCfg = Release|x86
+		{7FBC3153-CE18-4893-A156-FC7976509D4E}.Release|x86.Build.0 = Release|x86
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AFAAB4EA-A8D1-41BB-935A-46E98646D197}.Release|x86.ActiveCfg = Release|Any CPU
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B94E3566-D08E-4C86-985E-F7097E2BABC0}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BB20EE9-1E4B-40E3-85AA-54A5798D0763}
+	EndGlobalSection
+EndGlobal

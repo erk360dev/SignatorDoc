@@ -1,0 +1,4 @@
+*/bin/
+*/obj/
+*.v11.suo
+!/bin/Libs/
